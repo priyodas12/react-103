@@ -1,23 +1,23 @@
 
 import './App.css';
-import GenericHeader from './header/GenericHeader';
-import Footer from './footer/Footer';
-import Search from './search/Search';
-import Restaurants from './restaurants/Restaurants';
+import GenericHeader from './components/header/GenericHeader';
+import Footer from './components/footer/Footer';
+import Search from './components/search/Search';
+import Restaurants from './components/restaurants/Restaurants';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="header-content">
         <GenericHeader />
-      </header>
-      <body>
+      </div>
+      <div className='body-content'>
         <Search/>
         <Restaurants />
-      </body>
-      <footer>
+      </div>
+      <div className='footer-content'>
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }

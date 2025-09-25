@@ -2,15 +2,11 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 
-#header {
-    background-color: rgb(138, 208, 248);
+#header-container {
     align-items: center;
-    padding: 15px 50px;
-    top: 0;
-    z-index: 1000;
+    justify-content: center;
 }
 
 .navItems {
@@ -18,12 +14,10 @@
 }
 
 li {
-    font-size: 18px;
-    margin: 5px;
-    padding: 0px 10px;
-    list-style: none;
-    text-decoration: solid;
+    font-size: clamp(14px, 2vw, 18px);
+    margin: 10px;
+    padding: 4px 8px;
     font-weight: bold;
-    font-display: block;
     color: blueviolet;
+    list-style: none;
 }
