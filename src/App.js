@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import GenericHeader from './header/GenericHeader';
+import Footer from './footer/Footer';
+import Search from './search/Search';
+import Restaurants from './restaurants/Restaurants';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GenericHeader />
       </header>
+      <body>
+        <Search/>
+        <Restaurants />
+      </body>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

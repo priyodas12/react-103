@@ -1,0 +1,29 @@
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#header {
+    background-color: rgb(138, 208, 248);
+    align-items: center;
+    padding: 15px 50px;
+    top: 0;
+    z-index: 1000;
+}
+
+.navItems {
+    display: flex;
+}
+
+li {
+    font-size: 18px;
+    margin: 5px;
+    padding: 0px 10px;
+    list-style: none;
+    text-decoration: solid;
+    font-weight: bold;
+    font-display: block;
+    color: blueviolet;
+}
