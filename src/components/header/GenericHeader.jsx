@@ -5,7 +5,6 @@ import Logo from "../logo/Logo";
 
 function GenericHeader() {
     return <div id="header-container">
-        <header id="header">
            <nav className="navbar">
             <Logo></Logo>
             <ul className="navItems">
@@ -15,7 +14,6 @@ function GenericHeader() {
                 <li>Contacts</li>
             </ul>
            </nav>
-        </header>
     </div>;
 }
 
