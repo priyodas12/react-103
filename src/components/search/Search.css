@@ -11,6 +11,7 @@
 }
 
 #search-submit-button {
+    margin: 2px;
     width: 60px;
     height: 30px;
     border-radius: 5px;
@@ -21,5 +22,5 @@
     width: 60px;
     height: 30px;
     border-radius: 5px;
-    background-color: rgb(120, 170, 34);
+    background-color: rgb(101, 156, 4);
 }
