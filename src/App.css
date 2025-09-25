@@ -38,6 +38,8 @@ body {
 .body-content {
   flex: 64;
   background: lightgray;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-content {

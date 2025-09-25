@@ -1,0 +1,25 @@
+#searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#search-submit-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(194, 241, 113);
+}
+
+#search-submit-button:hover {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(120, 170, 34);
+}

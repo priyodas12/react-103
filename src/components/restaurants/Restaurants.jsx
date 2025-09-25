@@ -1,4 +1,7 @@
 import React from "react";
+import './Restaurants.css'
+
+
 
 function Restaurants(){
     return <div id="restaurants">
