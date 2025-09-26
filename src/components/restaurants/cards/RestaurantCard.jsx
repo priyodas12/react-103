@@ -3,7 +3,7 @@ import './RestaurantCard.css';
 
 
 function RestaurantCard({ restData }) {
-    const { restName, restAddress, imageUrl, cuisine, isOpen } = restData;
+    const { restName, restAddress, imageUrl, cuisine, isOpen, rating } = restData;
     let cuisineList = cuisine.join(",")
     return <div className="card">
         <div className="card-image">
@@ -12,9 +12,10 @@ function RestaurantCard({ restData }) {
 
         <div className="card-text">
             <h3>{restName}</h3>
-            <p>{cuisineList}</p>
+            <p>Special: {cuisineList}</p>
+            <p>Ratings: {rating}</p>
+            <p>Location: {restAddress}</p>
             <p>{isOpen ? "Open" : "Closed"}</p>
-            <p>{restAddress}</p>
         </div>
     </div>
 }

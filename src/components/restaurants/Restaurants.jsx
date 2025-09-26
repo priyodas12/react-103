@@ -52,7 +52,8 @@ function getRestaurantData() {
         restAddress: faker.location.streetAddress(),
         cuisine: [faker.food.ethnicCategory(), faker.food.ethnicCategory(), faker.food.ethnicCategory()],
         imageUrl: getImageUrl(),
-        isOpen: faker.number.int(1, 10) < 8
+        isOpen: faker.number.int(3, 10) < 8,
+        rating: Math.round(Math.random() * 9)
     };
 }
 
