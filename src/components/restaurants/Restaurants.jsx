@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Restaurants.css'
 import RestaurantCard from "./cards/RestaurantCard";
-import { faker } from "@faker-js/faker";
+
 
 
 function Restaurants() {
