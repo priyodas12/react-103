@@ -1,5 +1,5 @@
 import React from "react";
-import { useRestaurants } from "../../hooks/RestaurantHook";
+import { useRestaurants } from "../../hooks/restaurantHook";
 import RestaurantCard from "./cards/RestaurantCard";
 import './Restaurants.css'
 

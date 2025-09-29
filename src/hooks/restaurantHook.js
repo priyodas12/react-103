@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchRestaurantsData } from "../service/RestaurantService";
+import { fetchRestaurantsData } from "../service/restaurantService";
 
 // create custom hook;
 export function useRestaurants() {
