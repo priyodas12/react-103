@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from "react";
-import './Restaurants.css'
+import React from "react";
+import { useRestaurants } from "../../hooks/RestaurantHook";
 import RestaurantCard from "./cards/RestaurantCard";
+import './Restaurants.css'
 
 
 
 function Restaurants() {
 
-    const [restaurantData, setRestaurantData] = useState([]);
+    const { restaurants, loading, error } = useRestaurants();
 
-    useEffect(() => {
-        fetch("http://localhost:3001/api/v1/restaurants/")
-            .then(res => res.json())
-            .then((data) => setRestaurantData(data))
-            .catch((error) => console.log("error while fetching data from /api/v1/restaurants", error))
-    }, []);
+    if (loading) {
+        return <div> Loading Restaurants </div>
+    }
+    if (error) {
+        return <div>Error while Loading Restaurants</div>
+    }
 
     return <div id="restaurants">
 
-        {restaurantData.sort((rest1, rest2) => rest1.location.localeCompare(rest2.location)).map(restData =>
+        {restaurants.sort((rest1, rest2) => rest1.location.localeCompare(rest2.location)).map(restData =>
             <RestaurantCard restData={restData} key={restData._id}></RestaurantCard>
         )
         }
